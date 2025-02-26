@@ -5,6 +5,7 @@ body {
 
 /*header*/
 header {
+    text-align: center;
     background-color: #FB62F6;
     padding: 1rem 10px;
 }
