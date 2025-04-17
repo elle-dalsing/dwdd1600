@@ -117,20 +117,6 @@ main a:hover {
     color: #FB62F6
 }
 
-figure.portfolio {
-    width: 30%;
-    margin: 0 0 0 2%;
-    float: right;
-}
-
-figure.portfolio img {
-    width: 100%;
-    height: auto;
-}
-figure.portfolio figcaption{
-    text-align: center;
-    font-size: .75rem;
-}
 
 /* footer information here */
 
