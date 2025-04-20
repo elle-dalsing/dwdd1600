@@ -35,7 +35,7 @@ nav a {
     font-weight: 700;
 }
 nav li.active a {
-    background-color: black;
+    background-color: grey;
     color: #F2b705;
 }
 nav li a:hover {
@@ -167,7 +167,7 @@ height: 6rem;
 }
 
 .myform :required {
-background-color: grey;
+background-color: whitesmoke;
 
 }
 
