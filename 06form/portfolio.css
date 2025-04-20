@@ -122,27 +122,34 @@ main a:hover {
 
 
 .myform fieldset {
-    border: 1px solid #645dd7
+    border: 1px solid #645dd7;
     border-radius: 3px;
     margin-bottom: 1.3rem;
-
 }
 
 .myform legend {
-    color: #645dd7
+    color: #645dd7;
     font-size: .8rem;
 }
 
 .myform label {
-    margin: .7rem;
+    margin: .7rem 0;
 }
 
-.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform textarea {
+.myform label, 
+.myform select, 
+.myform [type="text"], 
+.myform [type="tel"], 
+.myform [type="email"], 
+.myform textarea {
     display: block;
 }
 
-.myform [type=text], .myform [text=tel], .myform select, .myform textarea{
-
+.myform [type="text"], 
+.myform [type="tel"], 
+.myform [type="email"], 
+.myform select, 
+.myform textarea {
     border: solid 1px grey;
     padding: .3rem;
     width: 250px;
@@ -151,36 +158,21 @@ main a:hover {
     font-weight: 200;
 }
 
-
-footer {
-    border-top: solid #ccc 2px;
-    text-align: center;
-    color: #645dd7;
-    font-size: .7rem;
-    padding: 1rem 0;
-    clear: both;
-}
-
 .myform textarea {
-
-height: 6rem;
+    height: 6rem;
 }
 
 .myform :required {
-background-color: pink;
-
+    background-color: pink;
 }
 
-
-.myform [type=submit]{
-
+.myform [type="submit"] {
     background-color: #645dd7;
     border: none;
     padding: 1rem 2rem;
-    border: radius 10px;
+    border-radius: 10px; /* fixed this line */
     color: white;
-    margin: 1rem 0rem 0rem 1vw;
-    
+    margin: 1rem 0 0 1vw;
 }
 
 
