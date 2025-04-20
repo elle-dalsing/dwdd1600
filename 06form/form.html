@@ -34,14 +34,21 @@
 <main>
     <h1>Contact Elle's Team!</h1>
     
-    <form method="get" class="myform" action="thanks.html">
+    <fieldset>
+      <legend>Your information (so we can contact you:)</legend>
     
-        <fieldset>
-        <legend>Your information (so we can contact you:)</legend>
-        <label> First Name * <input type="text" name="fname" required placeholder="ex. elle"> </label>
-        <label> Last Name * <input type="text" name="lname" required placeholder="ex. dalsing"> </label>
-        <label> Cell Number * <input type="tel" name="phone" required placeholder="ex. (123)456-1234"> </label>
-        </fieldset>
+      <label for="fname">First Name *</label>
+      <input type="text" id="fname" name="fname" required placeholder="ex. elle">
+    
+      <label for="lname">Last Name *</label>
+      <input type="text" id="lname" name="lname" required placeholder="ex. dalsing">
+    
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="ex. elle@email.com">
+    
+      <label for="phone">Cell Number *</label>
+      <input type="tel" id="phone" name="phone" required placeholder="ex. (123)456-1234">
+    </fieldset>
 
 
         <fieldset>
@@ -60,8 +67,8 @@
             <label><input type="checkbox" name="socialmedia" value="clicked"> Social Media </label>
             
 
-            <label>Preferred contact time!
-            <select name="time">
+            <label for="time">Preferred contact time</label>
+            <select name="time" id="time">
             <option value="none">Please Select!</option>
             <option value="morning">Between 8:00am - 12:00pm</option>
             <option value="afternoon">Between 1:00pm - 4:00pm</option>
@@ -70,10 +77,12 @@
             </label>
         </fieldset>
 
-        <label>Comments
-            <textarea name="Comments:">Please add any additional information you'd like to share!</textarea>
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" placeholder="Please add any additional information you'd like to share!"></textarea>
 
-        </label>
+        </fieldset>
 
 
 
