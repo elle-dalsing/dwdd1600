@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An overview of Elle Dalsing's portfolio work.">
+  <meta name="author" content="Elle Dalsing">
+  <title>Elle Dalsing: Graphic Design Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>ELLE DALSING</h1>
+    <h2>graphic designer</h2><br>
+    <h2>utah</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="about.html">💖 About Me</a></li>
+      <li><a href="printworks.html">🖇️ Print Works</a></li>
+      <li><a href="digitalworks.html">📱 Digital Works</a></li>  
+      <li><a href="gallery.html">🖇️ Gallery</a></li>
+      <li class="active"><a href="form.html">Contact Us!</a></li>
+      <li><a href="index.html">🏠 Home Page</a></li>  
+    </ul>
+  </nav>
+
+
+
+<main>
+    <h1>Contact Elle's Team!</h1>
+    
+    <form method="get" class="myform" action="thanks.html">
+    
+        <fieldset>
+        <legend>Your information (so we can contact you:)</legend>
+        <label> First Name * <input type="text" name="fname" required placeholder="ex. elle"> </label>
+        <label> Last Name * <input type="text" name="lname" required placeholder="ex. dalsing"> </label>
+        <label> Cell Number * <input type="tel" name="phone" required placeholder="ex. (123)456-1234"> </label>
+        </fieldset>
+
+
+        <fieldset>
+        <legend> Services you'd be interested in</legend>
+            <label><input type="radio" name="method" value="branding">Business Branding</label>
+            <label><input type="radio" name="method" value="logo">Logo Design</label>
+            <label><input type="radio" name="method" value="marketing">Marketing</label>
+            <label><input type="radio" name="method" value="social">Social Media</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred contact method</legend>
+            <label><input type="checkbox" name="email" value="clicked"> Email </label>
+            <label><input type="checkbox" name="phonecall" value="clicked"> Telephone Call </label>
+            <label><input type="checkbox" name="text" value="clicked"> Text Message </label>
+            <label><input type="checkbox" name="socialmedia" value="clicked"> Social Media </label>
+            
+
+            <label>Preferred contact time!
+            <select name="time">
+            <option value="none">Please Select!</option>
+            <option value="morning">Between 8:00am - 12:00pm</option>
+            <option value="afternoon">Between 1:00pm - 4:00pm</option>
+            <option value="evening">Between 4:00pm - 6:00pm</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <label>Comments
+            <textarea name="Comments:">Please add any additional information you'd like to share!</textarea>
+
+        </label>
+
+
+
+    <input type="submit" value="Send Delivery Request">
+    </form>
+
+</main>
+
+
+
+<footer>
+    <em> &copy; 2025 ELLE INC &bull; ELLE DALSING &bull; Web Essentials </em>
+  </footer>
+</body>
+</html>
