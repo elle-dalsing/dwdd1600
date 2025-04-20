@@ -24,6 +24,10 @@ header div {
     padding-left: 2vw;
 }
 
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
 /* navigation stuff here*/
 nav{
     background-color: #645DD7;
