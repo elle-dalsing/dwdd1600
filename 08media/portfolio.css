@@ -1,8 +1,5 @@
 /*prevent problems with different browsers*/
-* {box-sizing: border-box}
-
-
-
+* {box-sizing: border-box;}
 
 body {
     font-family: "Josefin Sans", serif;
@@ -30,42 +27,48 @@ header div {
 }
 
 
-
 /* navigation stuff here*/
-nav{
+nav {
     background-color: #645DD7;
-
 }
+
 nav ul {
     margin: 0;
     list-style-type: none;
     padding: 0 10px;
     display: flex;
 }
+
 nav a {
     display: block;
-    padding: .83rem .83rem;
+    padding: 1.2rem 1rem .3rem 1rem;
+    font-size: 1rem;
     text-decoration: none;
-    font-size: 1.3rem;
-    color:#F2FF49;
-    font-weight: 700;
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: none; /* no underline in normal state */
 }
+
+nav a:hover {
+    color: #F2FF49;
+    border-bottom: solid 2px #F2FF49; /* add underline on hover */
+}
+
 nav li.active a {
-    background-color: grey;
     color: #F2b705;
-}
-nav li a:hover {
-    color: white;
+    border-bottom: solid 2px #645dd7; /* underline for active state */
 }
 
 main {
     padding: 1rem 10px;
 }
 
-main h1{
+main h1 {
     color:#efefef;
 }
-main h2{
+main h2 {
     color: #645DD7;
     margin-bottom: .2rem;
 }
@@ -84,7 +87,6 @@ main dl {
     padding: .5rem;
     border-radius: 10px;
     border: 1px solid black;
-
 }
 
 main dl dt {
@@ -127,82 +129,68 @@ main address {
 }
 
 main a {
-    color: slategray
+    color: slategray;
 }
 main a:hover {
-    color: #FB62F6
+    color: #FB62F6;
 }
 
 /* smallscreens */
-
-@media only screen and (max-width: 800px){
-    nav ul{
-       margin: 0;
-       padding:0 2%;
-       list-style-type: none;
-
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2%;
+        list-style-type: none;
     }
-    nav a{
-       display: block;
-       padding: .7rem;
-       text-decoration: off;
-       font-weight: 700;
-       text-transform: uppercase;
-       text-align: center;
-       border-bottom: solid 1px #aaa;
-       border-top: solid 1px #aaa ;
-       color: #645dd7;
-
-    }
-   
-    nav .active a{
-       background-color: #645dd7;
-       color:white;
-       background-image: linear-gradient(#645dd7,#9893f4);
+    nav a {
+        display: block;
+        padding: .7rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        border-top: solid 1px #aaa;
+        color: #645dd7;
     }
 
+    nav .active a {
+        background-color: #645dd7;
+        color: white;
+        background-image: linear-gradient(#645dd7, #9893f4);
+    }
 } /*end of media query*/
 
 /* bigscreens! */
+@media only screen and (min-width: 801px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px #fff;
+    }
 
-@media only screen and (min-width: 801px){
-
-   nav {
-       border-top: solid 1px #E0E6E6;
-       
-   }
-   nav ul {
-       margin: 0;
-       padding: 0 2vw;
-       list-style-type: none;
-       display: flex;
-   }
-   nav a {
-    display: block;
-    padding: 1.2rem 1rem .3rem 1rem;
-    font-size: 1rem;
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    border-bottom: none; /* no underline in normal state */
-}
-
-nav a:hover {
-    color: #F2FF49;
-    border-bottom: solid 2px #F2FF49; /* add underline on hover */
-}
-
-nav li.active a {
-    color: #F2b705;
-    border-bottom: solid 2px #645dd7; /* underline for active state */
-}
-   
-
+    nav .active a {
+        border-bottom: solid 2px #645dd7;
+    }
+    nav a:hover {
+        color: #F2FF49;
+    }
 } /*end of media query*/
-
-
 
 .myform fieldset {
     border: 1px solid #645dd7;
@@ -226,117 +214,4 @@ nav li.active a {
 .myform [type="email"], 
 .myform textarea {
     display: block;
-}
-
-.myform [type="text"], 
-.myform [type="tel"], 
-.myform [type="email"], 
-.myform select, 
-.myform textarea {
-    border: solid 1px grey;
-    padding: .3rem;
-    width: 250px;
-    border-radius: .3rem;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 200;
-}
-
-.myform textarea {
-    height: 6rem;
-}
-
-.myform :required {
-    background-color: pink;
-}
-
-.myform [type="submit"] {
-    background-color: #645dd7;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 10px; /* fixed this line */
-    color: white;
-    margin: 1rem 0 0 1vw;
-}
-
-
-table.current_gallerydisplays th{
-    background-color: #645dd7;
-    color: white;
-    padding: 0.5rem 2vw;
-    text-align: left;
-}
-
-table.current_gallerydisplays td{
-    background-color: grey;
-    padding: .4rem 2vw;
-}
-
-table.current_gallerydisplays tr :nth-child(odd){
-    background-color: #f7f7f7;
-}
-
-table.current_gallerydisplays tr:hover{
-background-color: rgba(85,107,32,0.1)
-
-}
-
-/* footer information here */
-
-footer {
-    background-color: #645dd7;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 1.3rem;
-    color: white;
-}
-
-footer p {
-    margin: 0px;
-    letter-spacing: 5px;
-}
-
-.gallery-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  
-  .gallery-column figure {
-    margin: 0;
-  }
-  
-  .home-image {
-    float: right;
-    margin: 1rem;
-    width: 200px; /* Adjust as needed */
-  }
-
-  .home-image {
-    float: right;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    margin: 20px;
-    border: 3px solid black; /* optional style for edge */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* optional depth */
-}
-
-
-  
-.logo.png {
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-.logo.png img {
-    width: 100%;
-    height: auto;
-}
-
-
-.gallery img:hover {
-    box-shadow: 1px 2px 4px rgb(135, 133, 133);
 }
