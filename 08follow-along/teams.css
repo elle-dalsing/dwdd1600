@@ -144,20 +144,16 @@ ul li {
 table.our-activities{
     width: 100%;
     border-collapse: collapse;
-
 }
 
-
-
-
-table.our-activities th{
-    background-color: #3879af;
+table.our-activities th {
+    background-color: #3179AF;
     color: white;
     padding: 0.5rem 2vw;
     text-align: left;
 }
 
-table.our-activities td{
+table.our-activities td {
     background-color: #54691f;
     padding: .4rem 2vw;
 }
@@ -167,8 +163,7 @@ table.our-activities tr :nth-child(odd){
 }
 
 table.our-activities tr:hover{
-background-color: rgba(84,105,31,0.2)
-
+    background-color: rgba(84,105,31,0.2)
 }
 
 
