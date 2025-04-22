@@ -125,3 +125,35 @@
       height: 50vh;
     }
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background: linear-gradient(to right, #ffd6e0, #e0f7ff);
+    color: #333;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {
+    background-color: #fff5f5;
+    transition: background-color 0.3s ease;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  td {
+    color: #555;
+  }
