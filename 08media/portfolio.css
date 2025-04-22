@@ -1,6 +1,10 @@
 /*prevent problems with different browsers*/
 * {box-sizing: border-box;}
 
+html {
+    scroll-behavior: smooth; /* ✅ Smooth scroll for anchor links */
+}
+
 body {
     font-family: "Josefin Sans", serif;
     margin: 0px;
@@ -26,7 +30,6 @@ header div {
     height: auto;
 }
 
-
 /* navigation stuff here*/
 nav {
     background-color: #645DD7;
@@ -48,17 +51,17 @@ nav a {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: none; /* no underline in normal state */
+    border-bottom: solid 2px transparent; /* ✅ Invisible underline to prevent layout shift */
 }
 
 nav a:hover {
     color: #F2FF49;
-    border-bottom: solid 2px #F2FF49; /* add underline on hover */
+    border-bottom: solid 2px #F2FF49; /* ✅ Underline on hover */
 }
 
 nav li.active a {
     color: #F2b705;
-    border-bottom: solid 2px #645dd7; /* underline for active state */
+    border-bottom: solid 2px #645dd7; /* ✅ Underline for active */
 }
 
 main {
@@ -135,6 +138,11 @@ main a:hover {
     color: #FB62F6;
 }
 
+/* ✅ Anchor fix: Prevent header from covering linked sections */
+section, h1[id], h2[id], h3[id] {
+    scroll-margin-top: 80px;
+}
+
 /* smallscreens */
 @media only screen and (max-width: 800px) {
     nav ul {
@@ -149,7 +157,7 @@ main a:hover {
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
-        border-bottom: solid 1px #aaa;
+        border-bottom: solid 1px #aaa; /* ✅ Keep or remove depending on desired mobile style */
         border-top: solid 1px #aaa;
         color: #645dd7;
     }
@@ -181,7 +189,7 @@ main a:hover {
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;
-        border-bottom: solid 2px #fff;
+        border-bottom: solid 2px transparent; /* ✅ Consistent with base style */
     }
 
     nav .active a {
@@ -189,6 +197,7 @@ main a:hover {
     }
     nav a:hover {
         color: #F2FF49;
+        border-bottom: solid 2px #F2FF49;
     }
 } /*end of media query*/
 
