@@ -85,7 +85,6 @@
     margin: 2rem 0;
   }
   
-  /* Gallery Section */
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +94,7 @@
   }
   
   .gallery img {
+    display: flex;
     max-width: 300px;
     width: 100%;
     height: auto;
