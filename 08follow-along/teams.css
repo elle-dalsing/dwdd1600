@@ -141,7 +141,7 @@ ul li {
 }
 
 
-table.our-activities{
+table.our-activities {
     width: 100%;
     border-collapse: collapse;
 }
@@ -154,18 +154,16 @@ table.our-activities th {
 }
 
 table.our-activities td {
-    background-color: #54691f;
     padding: .4rem 2vw;
 }
 
-table.our-activities tr :nth-child(odd){
+table.our-activities tr:nth-child(odd) {
     background-color: #f7f7f7;
 }
 
-table.our-activities tr:hover{
-    background-color: rgba(84,105,31,0.2)
+table.our-activities tr:hover {
+    background-color: rgba(84, 105, 31, 0.2);
 }
-
 
 /* footer stuff here */
 footer {
