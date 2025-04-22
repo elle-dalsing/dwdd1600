@@ -87,23 +87,23 @@
     margin: 2rem 0;
   }
   
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem;
-  }
-  
-  .gallery img {
-    display: flex;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add the drop shadow back */
-    border-radius: 10px;
-  }
-  
+  /* Gallery Container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+/* Gallery Images */
+.gallery img {
+  width: 100%; /* Images will fill their container */
+  max-width: 300px; /* But not exceed 300px */
+  height: auto;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  border-radius: 10px;
+}
   /* Footer */
   footer {
     text-align: center;
