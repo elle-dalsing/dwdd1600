@@ -256,6 +256,27 @@ main a:hover {
 }
 
 
+table.current_gallerydisplays th{
+    background-color: #645dd7;
+    color: white;
+    padding: 0.5rem 2vw;
+    text-align: left;
+}
+
+table.current_gallerydisplays td{
+    background-color: grey;
+    padding: .4rem 2vw;
+}
+
+table.current_gallerydisplays tr :nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+table.current_gallerydisplays tr:hover{
+background-color: rgba(85,107,32,0.1)
+
+}
+
 /* footer information here */
 
 footer {
