@@ -64,6 +64,27 @@ nav li.active a {
     border-bottom: solid 2px #645dd7; /* ✅ Underline for active */
 }
 
+table.current_gallerydisplays th{
+    background-color: #645dd7;
+    color: white;
+    padding: 0.5rem 2vw;
+    text-align: left;
+}
+
+table.current_gallerydisplays td{
+    background-color: #645dd7;
+    padding: .4rem 2vw;
+}
+
+table.current_gallerydisplays tr :nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+table.current_gallerydisplays tr:hover{
+background-color: rgba(84,105,31,0.2)
+
+}
+
 main {
     padding: 1rem 10px;
 }
