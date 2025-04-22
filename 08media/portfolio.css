@@ -178,23 +178,26 @@ main a:hover {
        display: flex;
    }
    nav a {
-       display: block;
-       padding: 1.2rem 1rem .3rem 1rem;
-       font-size: 1rem;
-       text-decoration: none;
-       color: whitesmoke;
-       font-weight: 600;
-       text-transform: uppercase;
-       text-align: center;
-       border-bottom: solid 2px #fff;
-   }
-   
-   nav .active a {
-       border-bottom: solid 2px #645dd7;
-   }
-   nav a:hover {
-       color: F2FF49;
-   }
+    display: block;
+    padding: 1.2rem 1rem .3rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: none; /* no underline in normal state */
+}
+
+nav a:hover {
+    color: #F2FF49;
+    border-bottom: solid 2px #F2FF49; /* add underline on hover */
+}
+
+nav li.active a {
+    color: #F2b705;
+    border-bottom: solid 2px #645dd7; /* underline for active state */
+}
    
 
 } /*end of media query*/
