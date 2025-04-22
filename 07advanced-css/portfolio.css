@@ -25,18 +25,20 @@ header div {
     padding-left: 2vw;
 }
 
-/* Hero Image */
-.hero {
-    max-height: 400px;
-    overflow: hidden;
-}
 
-.hero-image {
+/* Hero section styles */
+.hero {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-image {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-}
+    max-width: 100%;
+  }
+  
 
 /* Navigation */
 nav {
