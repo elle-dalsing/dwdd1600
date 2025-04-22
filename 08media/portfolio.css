@@ -157,3 +157,62 @@
   td {
     color: #555;
   }
+
+
+
+
+
+
+.myform fieldset {
+  border: 1px solid #645dd7;
+  border-radius: 3px;
+  margin-bottom: 1.3rem;
+}
+
+.myform legend {
+  color: #645dd7;
+  font-size: .8rem;
+}
+
+.myform label {
+  margin: .7rem 0;
+}
+
+.myform label, 
+.myform select, 
+.myform [type="text"], 
+.myform [type="tel"], 
+.myform [type="email"], 
+.myform textarea {
+  display: block;
+}
+
+.myform [type="text"], 
+.myform [type="tel"], 
+.myform [type="email"], 
+.myform select, 
+.myform textarea {
+  border: solid 1px grey;
+  padding: .3rem;
+  width: 250px;
+  border-radius: .3rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 200;
+}
+
+.myform textarea {
+  height: 6rem;
+}
+
+.myform :required {
+  background-color: pink;
+}
+
+.myform [type="submit"] {
+  background-color: #645dd7;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px; /* fixed this line */
+  color: white;
+  margin: 1rem 0 0 1vw;
+}
