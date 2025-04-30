@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Budget Vacations</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Budget Vacations</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Request More Information</h2>
+      <form action="thanks.html" method="POST">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Travel Preferences</legend>
+
+          <label for="destination">Choose a Destination</label>
+          <select id="destination" name="destination" required>
+            <option value="">--Select--</option>
+            <option value="Nice">Nice, France</option>
+            <option value="MonteCarlo">Monte Carlo, Monaco</option>
+            <option value="PalmHarbor">Palm Harbor, Florida</option>
+            <option value="Venice">Venice, Italy</option>
+            <option value="Santorini">Santorini, Greece</option>
+            <option value="Banff">Banff, Canada</option>
+          </select>
+
+          <p>Preferred Trip Type</p>
+          <label><input type="radio" name="tripType" value="Solo" required> Solo</label>
+          <label><input type="radio" name="tripType" value="Couple"> Couple</label>
+          <label><input type="radio" name="tripType" value="Family"> Family</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label for="comments">Let us know more about what you're looking for:</label>
+          <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+        </fieldset>
+
+        <button type="submit" class="submit-button">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Budget Vacations. All rights reserved.</p>
+  </footer>
+</body>
+</html>

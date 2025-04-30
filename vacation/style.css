@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cal Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #008cba;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #f4a261;
+  color: white;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: url('../images/beach.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #f4a261;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #008cba;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #008cba;
+  margin-bottom: 2rem;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.destination-grid figure {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+  padding: 0.5rem;
+}
+
+.destination-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.destination-grid figcaption {
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  color: #008cba;
+  margin-bottom: 1.5rem;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+form legend {
+  font-weight: bold;
+  color: #008cba;
+}
+
+form label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Cal Sans", sans-serif;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input[type="radio"] {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+
+.submit-button {
+  background: #f4a261;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #e07b39;
+}
+
+/* PACKAGES */
+.package {
+  border: 2px solid #008cba;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.package img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.package h2 {
+  color: #008cba;
+}
+
+.package p {
+  margin: 0.5rem 0;
+}
+
+.package a {
+  color: #f4a261;
+  text-decoration: none;
+}
+
+.package a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    background: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    width: 200px;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: #f4a261;
+  }
+}
