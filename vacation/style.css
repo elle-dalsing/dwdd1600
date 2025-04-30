@@ -21,6 +21,16 @@ body {
 main {
   padding: 0 1.5rem;
 }
+body {
+  padding: 0;
+}
+
+main,
+.gallery,
+.contact-form,
+.package {
+  padding: 0 1.5rem;
+}
 
 /* Header */
 header {
