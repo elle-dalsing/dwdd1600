@@ -1,25 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-
-* {
-  box-sizing: border-box;
+/* Greece-inspired Color Scheme */
+:root {
+  --blue: #0077b6; /* Deep Greece Blue */
+  --light-blue: #0096c7; /* Light Greece Blue */
+  --white: #ffffff; /* Crisp White */
+  --sand: #f4a261; /* Sandy Beige */
+  --dark-blue: #03045e; /* Darker Greece Blue */
+  --seafoam: #00b4d8; /* Seafoam Green */
 }
 
+/* Global Settings */
 body {
   font-family: "Cal Sans", sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: var(--white);
+  color: var(--dark-blue);
 }
 
+/* Header */
 header {
-  background: #008cba;
-  color: white;
+  background: var(--blue);
+  color: var(--white);
   padding: 1rem;
   text-align: center;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
@@ -33,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -42,43 +49,53 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background: #f4a261;
-  color: white;
+  background: var(--sand);
+  color: var(--white);
 }
 
+/* Hero Section */
 .hero {
   padding: 2rem;
   text-align: center;
   background: url('../images/beach.jpg') no-repeat center center/cover;
-  color: white;
+  background-size: cover;
+  color: var(--white);
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
 }
 
+/* Button */
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: #f4a261;
-  color: white;
+  background: var(--sand);
+  color: var(--white);
   text-decoration: none;
   border-radius: 5px;
   margin-top: 1rem;
+  transition: background 0.3s;
 }
 
+.button:hover {
+  background: var(--seafoam);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #008cba;
-  color: white;
+  background: var(--blue);
+  color: var(--white);
   margin-top: 2rem;
 }
 
-/* GALLERY */
+/* Gallery */
 .gallery {
   padding: 2rem;
   text-align: center;
 }
 
 .gallery h2 {
-  color: #008cba;
+  color: var(--blue);
   margin-bottom: 2rem;
 }
 
@@ -89,10 +106,10 @@ footer {
 }
 
 .destination-grid figure {
-  border: 2px solid #ccc;
+  border: 2px solid var(--sand);
   border-radius: 5px;
   overflow: hidden;
-  background: white;
+  background: var(--white);
   padding: 0.5rem;
 }
 
@@ -106,26 +123,26 @@ footer {
 .destination-grid figcaption {
   padding: 0.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--dark-blue);
 }
 
-/* CONTACT FORM */
+/* Contact Form */
 .contact-form {
   padding: 2rem;
   max-width: 600px;
   margin: auto;
-  background: white;
+  background: var(--white);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-form h2 {
-  color: #008cba;
+  color: var(--blue);
   margin-bottom: 1.5rem;
 }
 
 form fieldset {
-  border: 1px solid #ccc;
+  border: 1px solid var(--sand);
   border-radius: 5px;
   margin-bottom: 1.5rem;
   padding: 1rem;
@@ -133,7 +150,7 @@ form fieldset {
 
 form legend {
   font-weight: bold;
-  color: #008cba;
+  color: var(--blue);
 }
 
 form label {
@@ -148,7 +165,7 @@ form select,
 form textarea {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--sand);
   border-radius: 5px;
   font-family: "Cal Sans", sans-serif;
 }
@@ -168,26 +185,27 @@ form input[type="radio"] {
 }
 
 .submit-button {
-  background: #f4a261;
-  color: white;
+  background: var(--sand);
+  color: var(--white);
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .submit-button:hover {
-  background: #e07b39;
+  background: var(--seafoam);
 }
 
-/* PACKAGES */
+/* Packages */
 .package {
-  border: 2px solid #008cba;
+  border: 2px solid var(--blue);
   padding: 1rem;
   margin: 2rem auto;
   max-width: 700px;
-  background: white;
+  background: var(--white);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -200,7 +218,7 @@ form input[type="radio"] {
 }
 
 .package h2 {
-  color: #008cba;
+  color: var(--blue);
 }
 
 .package p {
@@ -208,7 +226,7 @@ form input[type="radio"] {
 }
 
 .package a {
-  color: #f4a261;
+  color: var(--sand);
   text-decoration: none;
 }
 
@@ -216,31 +234,31 @@ form input[type="radio"] {
   text-decoration: underline;
 }
 
-/* MOBILE NAVIGATION */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
   nav ul li {
-    display: block;
-    margin: 10px 0;
+      display: block;
+      margin: 10px 0;
   }
 
   nav ul li a {
-    display: inline-block;
-    background: #008cba;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-align: center;
-    width: 200px;
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-align: center;
+      width: 200px;
   }
 
   nav ul li a:hover,
   nav ul li a.active {
-    background: #f4a261;
+      background: var(--seafoam);
   }
 }
